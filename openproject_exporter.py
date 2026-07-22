@@ -285,12 +285,12 @@ def fetch_work_packages(client):
 def build_row(client, wp):
     wp_id = wp.get("id")
     author_href = wp.get("_links", {}).get("author", {}).get("href", "")
-    robot_id, hotel_name = match_hotel(wp.get("subject", ""))
+    _, hotel_name = match_hotel(wp.get("subject", ""))
 
     return {
         "工单类别": TARGET_TYPE_NAME,
         "工单编号": wp_id,
-        "机器人编号": robot_id,
+        "机器人编号": "",
         "酒店ID": "",
         "所属集团": "",
         "酒店名称": hotel_name,
