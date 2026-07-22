@@ -285,12 +285,12 @@ def fetch_work_packages(client):
 def build_row(client, wp):
     wp_id = wp.get("id")
     author_href = wp.get("_links", {}).get("author", {}).get("href", "")
-    _, hotel_name = match_hotel(wp.get("subject", ""))
+    robot_id, hotel_name = match_hotel(wp.get("subject", ""))
 
     return {
         "工单类别": TARGET_TYPE_NAME,
         "工单编号": wp_id,
-        "机器人编号": "",
+        "机器人编号": robot_id,
         "酒店ID": "",
         "所属集团": "",
         "酒店名称": hotel_name,
@@ -324,6 +324,8 @@ def build_dataframe(start_date, end_date, api_key=None, auth_header=None, exclud
             rows.append(build_row(client, wp))
             raw_subjects.append(wp.get("subject", ""))
     df_all = pd.DataFrame(rows, columns=EXPORT_COLUMNS)
+    # 将原始主题附加到 df_all 中（用于被排除工单的展示，导出时不会包含）
+    df_all["_原始主题"] = raw_subjects if len(raw_subjects) == len(df_all) else [""] * len(df_all)
 
     # 根据原始主题关键词过滤
     if exclude_keywords and len(raw_subjects) == len(df_all):

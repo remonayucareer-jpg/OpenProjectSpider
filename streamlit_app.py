@@ -107,9 +107,12 @@ if submitted:
                 excluded_df = df_all[~df_all.index.isin(df_filtered.index)]
                 with st.expander(f"查看被排除的 {excluded_count} 条工单详情"):
                     st.dataframe(
-                        excluded_df[["工单编号", "酒店名称", "工单状态", "工单创建时间"]],
+                        excluded_df[["工单编号", "_原始主题", "工单状态", "工单创建时间"]],
                         use_container_width=True,
                         hide_index=True,
+                        column_config={
+                            "_原始主题": st.column_config.TextColumn("主题", width="large"),
+                        },
                     )
 
             # 预览过滤后的数据表格
