@@ -303,12 +303,12 @@ def build_ai_row(client, wp):
     """构建AI运营工单的行"""
     wp_id = wp.get("id")
     author_href = wp.get("_links", {}).get("author", {}).get("href", "")
-    robot_id, hotel_name = match_hotel(wp.get("subject", ""))
+    _, hotel_name = match_hotel(wp.get("subject", ""))
 
     return {
         "工单类别": "AI运营工单",
         "工单编号": wp_id,
-        "机器人编号": robot_id,
+        "机器人编号": "",
         "酒店ID": "",
         "所属集团": "",
         "酒店名称": hotel_name,
@@ -337,7 +337,7 @@ def build_ts_row(client, wp):
     """构建TS工单的行，并根据是否由吴鹏辉解决来分类"""
     wp_id = wp.get("id")
     author_href = wp.get("_links", {}).get("author", {}).get("href", "")
-    robot_id, hotel_name = match_hotel(wp.get("subject", ""))
+    _, hotel_name = match_hotel(wp.get("subject", ""))
 
     # 判断是否由吴鹏辉解决
     if is_ts_resolved_by_wuph(client, wp_id):
@@ -348,7 +348,7 @@ def build_ts_row(client, wp):
     return {
         "工单类别": category,
         "工单编号": wp_id,
-        "机器人编号": robot_id,
+        "机器人编号": "",
         "酒店ID": "",
         "所属集团": "",
         "酒店名称": hotel_name,
