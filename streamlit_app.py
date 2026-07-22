@@ -82,8 +82,8 @@ if submitted:
 
         try:
             with st.spinner("正在抓取工单，请稍等..."):
-                # 获取数据（带排除关键词过滤）
-                df_filtered = build_dataframe(
+                # 只抓取一次，同时返回过滤后数据、原始数据和原始总数
+                df_filtered, df_all, total_count = build_dataframe(
                     start_date,
                     end_date,
                     api_key=api_key,
@@ -91,22 +91,7 @@ if submitted:
                     exclude_keywords=exclude_keywords if exclude_keywords else None,
                 )
                 filtered_count = len(df_filtered)
-
-                # 如果没有排除关键词，原始数据量 = 过滤后数据量
-                if exclude_keywords:
-                    # 再获取一次原始数据用于对比
-                    df_all = build_dataframe(
-                        start_date,
-                        end_date,
-                        api_key=api_key,
-                        auth_header=auth_header,
-                    )
-                    total_count = len(df_all)
-                    excluded_count = total_count - filtered_count
-                else:
-                    total_count = filtered_count
-                    excluded_count = 0
-                    df_all = df_filtered
+                excluded_count = total_count - filtered_count
 
             # 显示统计信息
             col_stat1, col_stat2, col_stat3 = st.columns(3)

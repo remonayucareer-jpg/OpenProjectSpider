@@ -323,26 +323,29 @@ def build_dataframe(start_date, end_date, api_key=None, auth_header=None, exclud
         if is_created_in_date_range(wp.get("createdAt"), start_date, end_date):
             rows.append(build_row(client, wp))
             raw_subjects.append(wp.get("subject", ""))
-    df = pd.DataFrame(rows, columns=EXPORT_COLUMNS)
+    df_all = pd.DataFrame(rows, columns=EXPORT_COLUMNS)
 
     # 根据原始主题关键词过滤
-    if exclude_keywords and len(raw_subjects) == len(df):
-        mask = pd.Series([True] * len(df))
+    if exclude_keywords and len(raw_subjects) == len(df_all):
+        mask = pd.Series([True] * len(df_all))
         for kw in exclude_keywords:
             kw = kw.strip()
             if kw:
                 mask &= ~pd.Series(raw_subjects).str.contains(kw, case=False, na=False)
-        df = df[mask]
-    return df
+        df_filtered = df_all[mask]
+    else:
+        df_filtered = df_all
+
+    return df_filtered, df_all, len(df_all)
 
 
 def build_excel_bytes(start_date, end_date, api_key=None, auth_header=None, exclude_keywords=None):
-    df = build_dataframe(start_date, end_date, api_key=api_key, auth_header=auth_header, exclude_keywords=exclude_keywords)
+    df_filtered, _, total_count = build_dataframe(start_date, end_date, api_key=api_key, auth_header=auth_header, exclude_keywords=exclude_keywords)
     output = BytesIO()
     with pd.ExcelWriter(output, engine="openpyxl") as writer:
-        df.to_excel(writer, index=False, sheet_name=TARGET_TYPE_NAME)
+        df_filtered.to_excel(writer, index=False, sheet_name=TARGET_TYPE_NAME)
     output.seek(0)
-    return output.read(), len(df)
+    return output.read(), len(df_filtered)
 
 
 def make_output_filename(start_date, end_date):
