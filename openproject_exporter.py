@@ -152,6 +152,19 @@ def extract_requirement(description_raw):
     return description
 
 
+def extract_ts_requirement(description_raw):
+    """TS工单专用：只提取【问题描述】后的内容"""
+    description = strip_description_markup(description_raw)
+    if not description:
+        return "暂无描述"
+
+    match_req = re.search(r"【问题描述】([\s\S]+)", description)
+    if match_req:
+        return match_req.group(1).strip()
+
+    return description
+
+
 def parse_issue_source(wp):
     cf11_obj = wp.get("customField11") or wp.get("_links", {}).get("customField11")
     if isinstance(cf11_obj, dict):
@@ -353,7 +366,7 @@ def build_ts_row(client, wp):
         "所属集团": "",
         "酒店名称": hotel_name,
         "非酒店名称": "",
-        "具体需求": extract_requirement(wp.get("description", {}).get("raw", "")),
+        "具体需求": extract_ts_requirement(wp.get("description", {}).get("raw", "")),
         "需求数量": "",
         "问题方": parse_issue_source(wp),
         "AI应用场景": "",
