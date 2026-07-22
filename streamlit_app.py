@@ -12,10 +12,10 @@ from openproject_exporter import (
 )
 
 
-st.set_page_config(page_title="OpenProject AI运营工单导出", layout="wide")
+st.set_page_config(page_title="OpenProject 工单导出", layout="wide")
 
-st.title("OpenProject AI运营工单导出")
-st.caption("选择工单创建日期范围，系统会抓取 AI运营工单并生成 Excel。")
+st.title("OpenProject 工单导出")
+st.caption("选择工单创建日期范围，系统会抓取 AI运营工单和 TS工单并生成 Excel。")
 
 default_date = datetime.strptime(DEFAULT_START_DATE, "%Y-%m-%d").date()
 
@@ -94,13 +94,20 @@ if submitted:
                 excluded_count = total_count - filtered_count
 
             # 显示统计信息
-            col_stat1, col_stat2, col_stat3 = st.columns(3)
+            col_stat1, col_stat2, col_stat3, col_stat4, col_stat5 = st.columns(5)
             with col_stat1:
                 st.metric("原始数据总量", total_count)
             with col_stat2:
                 st.metric("过滤后数据量", filtered_count)
             with col_stat3:
                 st.metric("因主题过滤排除", excluded_count)
+            with col_stat4:
+                ai_count = len(df_filtered[df_filtered["工单类别"] == "AI运营工单"])
+                st.metric("AI运营工单", ai_count)
+            with col_stat5:
+                ts_ai_count = len(df_filtered[df_filtered["工单类别"] == "TS工单-AI运营处理"])
+                ts_rd_count = len(df_filtered[df_filtered["工单类别"] == "TS工单-产研处理"])
+                st.metric("TS工单(AI/产研)", f"{ts_ai_count}/{ts_rd_count}")
 
             # 如果有排除，显示被排除的工单详情
             if excluded_count > 0 and exclude_keywords:

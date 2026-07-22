@@ -16,6 +16,9 @@ import pandas as pd
 BASE_URL = "https://pmo.cemsmart.com"
 TARGET_TYPE_ID = "11"
 TARGET_TYPE_NAME = "AI运营工单"
+TS_TYPE_ID = "1"
+TS_TYPE_NAME = "TS任务"
+WU_PENG_HUI_USER_ID = "141"  # 吴鹏辉的用户ID
 DEFAULT_START_DATE = "2026-07-08"
 PAGE_SIZE = 100
 VERIFY_SSL = False
@@ -255,12 +258,26 @@ def get_status_time(client, wp_id, target_status, author_href=None, skip_author=
     return ""
 
 
-def fetch_work_packages(client):
+def is_ts_resolved_by_wuph(client, wp_id):
+    """判断TS工单是否由吴鹏辉(ID=141)解决"""
+    activities = fetch_activities(client, wp_id)
+    for act in sorted(activities, key=lambda x: x.get("createdAt", "")):
+        user_href = act.get("_links", {}).get("user", {}).get("href", "")
+        user_id = user_href.rstrip("/").split("/")[-1] if user_href else ""
+        for detail in act.get("details", []):
+            if is_status_changed_to(detail, "已解决"):
+                if user_id == WU_PENG_HUI_USER_ID:
+                    return True
+    return False
+
+
+def fetch_work_packages_by_type(client, type_id):
+    """根据 type_id 抓取工单"""
     offset = 1
     while True:
         params = {
             "filters": json.dumps(
-                [{"type": {"operator": "=", "values": [TARGET_TYPE_ID]}}],
+                [{"type": {"operator": "=", "values": [type_id]}}],
                 ensure_ascii=False,
             ),
             "pageSize": PAGE_SIZE,
@@ -282,13 +299,54 @@ def fetch_work_packages(client):
             break
 
 
-def build_row(client, wp):
+def build_ai_row(client, wp):
+    """构建AI运营工单的行"""
     wp_id = wp.get("id")
     author_href = wp.get("_links", {}).get("author", {}).get("href", "")
     robot_id, hotel_name = match_hotel(wp.get("subject", ""))
 
     return {
-        "工单类别": TARGET_TYPE_NAME,
+        "工单类别": "AI运营工单",
+        "工单编号": wp_id,
+        "机器人编号": robot_id,
+        "酒店ID": "",
+        "所属集团": "",
+        "酒店名称": hotel_name,
+        "非酒店名称": "",
+        "具体需求": extract_requirement(wp.get("description", {}).get("raw", "")),
+        "需求数量": "",
+        "问题方": parse_issue_source(wp),
+        "AI应用场景": "",
+        "需求/问题": "",
+        "具体需求/问题": "",
+        "工单创建时间": format_time(wp.get("createdAt")),
+        "提交人": wp.get("_links", {}).get("author", {}).get("title", "未知"),
+        "工单开始处理时间": get_status_time(
+            client,
+            wp_id,
+            "进行中",
+            author_href=author_href,
+            skip_author=True,
+        ),
+        "工单解决时间": get_status_time(client, wp_id, "已解决"),
+        "工单状态": parse_current_status(wp),
+    }
+
+
+def build_ts_row(client, wp):
+    """构建TS工单的行，并根据是否由吴鹏辉解决来分类"""
+    wp_id = wp.get("id")
+    author_href = wp.get("_links", {}).get("author", {}).get("href", "")
+    robot_id, hotel_name = match_hotel(wp.get("subject", ""))
+
+    # 判断是否由吴鹏辉解决
+    if is_ts_resolved_by_wuph(client, wp_id):
+        category = "TS工单-AI运营处理"
+    else:
+        category = "TS工单-产研处理"
+
+    return {
+        "工单类别": category,
         "工单编号": wp_id,
         "机器人编号": robot_id,
         "酒店ID": "",
@@ -318,11 +376,20 @@ def build_row(client, wp):
 def build_dataframe(start_date, end_date, api_key=None, auth_header=None, exclude_keywords=None):
     client = OpenProjectClient(api_key=api_key, auth_header=auth_header)
     rows = []
-    raw_subjects = []  # 保存原始主题用于过滤
-    for wp in fetch_work_packages(client):
+    raw_subjects = []
+
+    # 1. 抓取AI运营工单
+    for wp in fetch_work_packages_by_type(client, TARGET_TYPE_ID):
         if is_created_in_date_range(wp.get("createdAt"), start_date, end_date):
-            rows.append(build_row(client, wp))
+            rows.append(build_ai_row(client, wp))
             raw_subjects.append(wp.get("subject", ""))
+
+    # 2. 抓取TS工单
+    for wp in fetch_work_packages_by_type(client, TS_TYPE_ID):
+        if is_created_in_date_range(wp.get("createdAt"), start_date, end_date):
+            rows.append(build_ts_row(client, wp))
+            raw_subjects.append(wp.get("subject", ""))
+
     df_all = pd.DataFrame(rows, columns=EXPORT_COLUMNS)
     # 将原始主题附加到 df_all 中（用于被排除工单的展示，导出时不会包含）
     df_all["_原始主题"] = raw_subjects if len(raw_subjects) == len(df_all) else [""] * len(df_all)
@@ -345,7 +412,7 @@ def build_excel_bytes(start_date, end_date, api_key=None, auth_header=None, excl
     df_filtered, _, total_count = build_dataframe(start_date, end_date, api_key=api_key, auth_header=auth_header, exclude_keywords=exclude_keywords)
     output = BytesIO()
     with pd.ExcelWriter(output, engine="openpyxl") as writer:
-        df_filtered.to_excel(writer, index=False, sheet_name=TARGET_TYPE_NAME)
+        df_filtered.to_excel(writer, index=False, sheet_name="工单数据")
     output.seek(0)
     return output.read(), len(df_filtered)
 
@@ -353,4 +420,4 @@ def build_excel_bytes(start_date, end_date, api_key=None, auth_header=None, excl
 def make_output_filename(start_date, end_date):
     start_text = start_date.strftime("%Y-%m-%d") if hasattr(start_date, "strftime") else str(start_date)
     end_text = end_date.strftime("%Y-%m-%d") if hasattr(end_date, "strftime") else str(end_date)
-    return f"openproject_ai_work_packages_{start_text}_to_{end_text}.xlsx"
+    return f"openproject_work_packages_{start_text}_to_{end_text}.xlsx"
