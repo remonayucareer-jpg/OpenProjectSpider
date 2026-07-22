@@ -51,10 +51,12 @@ with st.sidebar:
         placeholder="例如：测试,硬件实施",
         help="输入关键词，工单主题（subject）中包含这些关键词的行将被过滤掉，不展示也不导出。多个关键词用逗号分隔。",
     )
-    # 解析排除关键词
+    # 解析排除关键词（支持中文逗号、英文逗号）
     exclude_keywords = []
     if exclude_keywords_input:
-        exclude_keywords = [kw.strip() for kw in exclude_keywords_input.split(",") if kw.strip()]
+        # 先将中文逗号替换为英文逗号，再按英文逗号分割
+        normalized = exclude_keywords_input.replace("，", ",")
+        exclude_keywords = [kw.strip() for kw in normalized.split(",") if kw.strip()]
     if exclude_keywords:
         st.info(f"已设置 {len(exclude_keywords)} 个排除关键词：{'、'.join(exclude_keywords)}")
 
