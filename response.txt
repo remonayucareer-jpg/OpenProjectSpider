@@ -1,0 +1,882 @@
+{
+    "derivedStartDate": null,
+    "derivedDueDate": null,
+    "spentTime": "PT0S",
+    "materialCosts": "0.00 RMB",
+    "overallCosts": "0.00 RMB",
+    "_embedded": {
+        "attachments": {
+            "_type": "Collection",
+            "total": 11,
+            "count": 11,
+            "_embedded": {
+                "elements": [
+                    {
+                        "_type": "Attachment",
+                        "id": 34564,
+                        "fileName": "image.png",
+                        "fileSize": 33815,
+                        "description": {
+                            "format": "plain",
+                            "raw": "",
+                            "html": ""
+                        },
+                        "contentType": "image/png",
+                        "digest": {
+                            "algorithm": "md5",
+                            "hash": "d3a761b74f7c7441ce2a2d5424d2a508"
+                        },
+                        "createdAt": "2026-06-01T01:28:11.829Z",
+                        "_links": {
+                            "self": {
+                                "href": "/api/v3/attachments/34564",
+                                "title": "image.png"
+                            },
+                            "author": {
+                                "href": "/api/v3/users/131",
+                                "title": "余小琴"
+                            },
+                            "container": {
+                                "href": "/api/v3/work_packages/32070",
+                                "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                            },
+                            "staticDownloadLocation": {
+                                "href": "/api/v3/attachments/34564/content"
+                            },
+                            "downloadLocation": {
+                                "href": "/api/v3/attachments/34564/content"
+                            },
+                            "delete": {
+                                "href": "/api/v3/attachments/34564",
+                                "method": "delete"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "Attachment",
+                        "id": 34558,
+                        "fileName": "image.png",
+                        "fileSize": 24364,
+                        "description": {
+                            "format": "plain",
+                            "raw": "",
+                            "html": ""
+                        },
+                        "contentType": "image/png",
+                        "digest": {
+                            "algorithm": "md5",
+                            "hash": "210fe692b55333b9484a727bf4eacb58"
+                        },
+                        "createdAt": "2026-06-01T01:24:44.054Z",
+                        "_links": {
+                            "self": {
+                                "href": "/api/v3/attachments/34558",
+                                "title": "image.png"
+                            },
+                            "author": {
+                                "href": "/api/v3/users/131",
+                                "title": "余小琴"
+                            },
+                            "container": {
+                                "href": "/api/v3/work_packages/32070",
+                                "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                            },
+                            "staticDownloadLocation": {
+                                "href": "/api/v3/attachments/34558/content"
+                            },
+                            "downloadLocation": {
+                                "href": "/api/v3/attachments/34558/content"
+                            },
+                            "delete": {
+                                "href": "/api/v3/attachments/34558",
+                                "method": "delete"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "Attachment",
+                        "id": 34561,
+                        "fileName": "image.png",
+                        "fileSize": 20487,
+                        "description": {
+                            "format": "plain",
+                            "raw": "",
+                            "html": ""
+                        },
+                        "contentType": "image/png",
+                        "digest": {
+                            "algorithm": "md5",
+                            "hash": "ff947192ee45e3d43a4ce1e0994abdae"
+                        },
+                        "createdAt": "2026-06-01T01:27:05.641Z",
+                        "_links": {
+                            "self": {
+                                "href": "/api/v3/attachments/34561",
+                                "title": "image.png"
+                            },
+                            "author": {
+                                "href": "/api/v3/users/131",
+                                "title": "余小琴"
+                            },
+                            "container": {
+                                "href": "/api/v3/work_packages/32070",
+                                "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                            },
+                            "staticDownloadLocation": {
+                                "href": "/api/v3/attachments/34561/content"
+                            },
+                            "downloadLocation": {
+                                "href": "/api/v3/attachments/34561/content"
+                            },
+                            "delete": {
+                                "href": "/api/v3/attachments/34561",
+                                "method": "delete"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "Attachment",
+                        "id": 34562,
+                        "fileName": "image.png",
+                        "fileSize": 20456,
+                        "description": {
+                            "format": "plain",
+                            "raw": "",
+                            "html": ""
+                        },
+                        "contentType": "image/png",
+                        "digest": {
+                            "algorithm": "md5",
+                            "hash": "db4b6acc3521ca821219e234cd576aab"
+                        },
+                        "createdAt": "2026-06-01T01:27:27.479Z",
+                        "_links": {
+                            "self": {
+                                "href": "/api/v3/attachments/34562",
+                                "title": "image.png"
+                            },
+                            "author": {
+                                "href": "/api/v3/users/131",
+                                "title": "余小琴"
+                            },
+                            "container": {
+                                "href": "/api/v3/work_packages/32070",
+                                "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                            },
+                            "staticDownloadLocation": {
+                                "href": "/api/v3/attachments/34562/content"
+                            },
+                            "downloadLocation": {
+                                "href": "/api/v3/attachments/34562/content"
+                            },
+                            "delete": {
+                                "href": "/api/v3/attachments/34562",
+                                "method": "delete"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "Attachment",
+                        "id": 34555,
+                        "fileName": "image.png",
+                        "fileSize": 36397,
+                        "description": {
+                            "format": "plain",
+                            "raw": "",
+                            "html": ""
+                        },
+                        "contentType": "image/png",
+                        "digest": {
+                            "algorithm": "md5",
+                            "hash": "5948178b54611879bdf985998e300cda"
+                        },
+                        "createdAt": "2026-06-01T01:23:33.066Z",
+                        "_links": {
+                            "self": {
+                                "href": "/api/v3/attachments/34555",
+                                "title": "image.png"
+                            },
+                            "author": {
+                                "href": "/api/v3/users/131",
+                                "title": "余小琴"
+                            },
+                            "container": {
+                                "href": "/api/v3/work_packages/32070",
+                                "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                            },
+                            "staticDownloadLocation": {
+                                "href": "/api/v3/attachments/34555/content"
+                            },
+                            "downloadLocation": {
+                                "href": "/api/v3/attachments/34555/content"
+                            },
+                            "delete": {
+                                "href": "/api/v3/attachments/34555",
+                                "method": "delete"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "Attachment",
+                        "id": 34556,
+                        "fileName": "image.png",
+                        "fileSize": 26012,
+                        "description": {
+                            "format": "plain",
+                            "raw": "",
+                            "html": ""
+                        },
+                        "contentType": "image/png",
+                        "digest": {
+                            "algorithm": "md5",
+                            "hash": "baa99a1a44afc037e8cf4ad19a3d208b"
+                        },
+                        "createdAt": "2026-06-01T01:24:00.920Z",
+                        "_links": {
+                            "self": {
+                                "href": "/api/v3/attachments/34556",
+                                "title": "image.png"
+                            },
+                            "author": {
+                                "href": "/api/v3/users/131",
+                                "title": "余小琴"
+                            },
+                            "container": {
+                                "href": "/api/v3/work_packages/32070",
+                                "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                            },
+                            "staticDownloadLocation": {
+                                "href": "/api/v3/attachments/34556/content"
+                            },
+                            "downloadLocation": {
+                                "href": "/api/v3/attachments/34556/content"
+                            },
+                            "delete": {
+                                "href": "/api/v3/attachments/34556",
+                                "method": "delete"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "Attachment",
+                        "id": 34557,
+                        "fileName": "image.png",
+                        "fileSize": 25696,
+                        "description": {
+                            "format": "plain",
+                            "raw": "",
+                            "html": ""
+                        },
+                        "contentType": "image/png",
+                        "digest": {
+                            "algorithm": "md5",
+                            "hash": "fb9ece0a481bc9ce9cde4f046f1bef47"
+                        },
+                        "createdAt": "2026-06-01T01:24:22.910Z",
+                        "_links": {
+                            "self": {
+                                "href": "/api/v3/attachments/34557",
+                                "title": "image.png"
+                            },
+                            "author": {
+                                "href": "/api/v3/users/131",
+                                "title": "余小琴"
+                            },
+                            "container": {
+                                "href": "/api/v3/work_packages/32070",
+                                "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                            },
+                            "staticDownloadLocation": {
+                                "href": "/api/v3/attachments/34557/content"
+                            },
+                            "downloadLocation": {
+                                "href": "/api/v3/attachments/34557/content"
+                            },
+                            "delete": {
+                                "href": "/api/v3/attachments/34557",
+                                "method": "delete"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "Attachment",
+                        "id": 34559,
+                        "fileName": "image.png",
+                        "fileSize": 35347,
+                        "description": {
+                            "format": "plain",
+                            "raw": "",
+                            "html": ""
+                        },
+                        "contentType": "image/png",
+                        "digest": {
+                            "algorithm": "md5",
+                            "hash": "2c32bc4206118f7b3af91891f40ddc26"
+                        },
+                        "createdAt": "2026-06-01T01:26:29.881Z",
+                        "_links": {
+                            "self": {
+                                "href": "/api/v3/attachments/34559",
+                                "title": "image.png"
+                            },
+                            "author": {
+                                "href": "/api/v3/users/131",
+                                "title": "余小琴"
+                            },
+                            "container": {
+                                "href": "/api/v3/work_packages/32070",
+                                "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                            },
+                            "staticDownloadLocation": {
+                                "href": "/api/v3/attachments/34559/content"
+                            },
+                            "downloadLocation": {
+                                "href": "/api/v3/attachments/34559/content"
+                            },
+                            "delete": {
+                                "href": "/api/v3/attachments/34559",
+                                "method": "delete"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "Attachment",
+                        "id": 34560,
+                        "fileName": "image.png",
+                        "fileSize": 22159,
+                        "description": {
+                            "format": "plain",
+                            "raw": "",
+                            "html": ""
+                        },
+                        "contentType": "image/png",
+                        "digest": {
+                            "algorithm": "md5",
+                            "hash": "d2bd27b4ec0abebf2b47bfb16f32296b"
+                        },
+                        "createdAt": "2026-06-01T01:26:48.965Z",
+                        "_links": {
+                            "self": {
+                                "href": "/api/v3/attachments/34560",
+                                "title": "image.png"
+                            },
+                            "author": {
+                                "href": "/api/v3/users/131",
+                                "title": "余小琴"
+                            },
+                            "container": {
+                                "href": "/api/v3/work_packages/32070",
+                                "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                            },
+                            "staticDownloadLocation": {
+                                "href": "/api/v3/attachments/34560/content"
+                            },
+                            "downloadLocation": {
+                                "href": "/api/v3/attachments/34560/content"
+                            },
+                            "delete": {
+                                "href": "/api/v3/attachments/34560",
+                                "method": "delete"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "Attachment",
+                        "id": 34563,
+                        "fileName": "image.png",
+                        "fileSize": 23719,
+                        "description": {
+                            "format": "plain",
+                            "raw": "",
+                            "html": ""
+                        },
+                        "contentType": "image/png",
+                        "digest": {
+                            "algorithm": "md5",
+                            "hash": "304299175dd1b8531f050a4c3c956d5c"
+                        },
+                        "createdAt": "2026-06-01T01:27:48.819Z",
+                        "_links": {
+                            "self": {
+                                "href": "/api/v3/attachments/34563",
+                                "title": "image.png"
+                            },
+                            "author": {
+                                "href": "/api/v3/users/131",
+                                "title": "余小琴"
+                            },
+                            "container": {
+                                "href": "/api/v3/work_packages/32070",
+                                "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                            },
+                            "staticDownloadLocation": {
+                                "href": "/api/v3/attachments/34563/content"
+                            },
+                            "downloadLocation": {
+                                "href": "/api/v3/attachments/34563/content"
+                            },
+                            "delete": {
+                                "href": "/api/v3/attachments/34563",
+                                "method": "delete"
+                            }
+                        }
+                    },
+                    {
+                        "_type": "Attachment",
+                        "id": 34549,
+                        "fileName": "每周给华客更改的营业时间模板5月31日.docx",
+                        "fileSize": 14409,
+                        "description": {
+                            "format": "plain",
+                            "raw": "",
+                            "html": ""
+                        },
+                        "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                        "digest": {
+                            "algorithm": "md5",
+                            "hash": "b35bc8964c2a40d7d7b85741fd580746"
+                        },
+                        "createdAt": "2026-06-01T00:12:16.060Z",
+                        "_links": {
+                            "self": {
+                                "href": "/api/v3/attachments/34549",
+                                "title": "每周给华客更改的营业时间模板5月31日.docx"
+                            },
+                            "author": {
+                                "href": "/api/v3/users/131",
+                                "title": "余小琴"
+                            },
+                            "container": {
+                                "href": "/api/v3/work_packages/32070",
+                                "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                            },
+                            "staticDownloadLocation": {
+                                "href": "/api/v3/attachments/34549/content"
+                            },
+                            "downloadLocation": {
+                                "href": "/api/v3/attachments/34549/content"
+                            },
+                            "delete": {
+                                "href": "/api/v3/attachments/34549",
+                                "method": "delete"
+                            }
+                        }
+                    }
+                ]
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/v3/work_packages/32070/attachments"
+                }
+            }
+        },
+        "relations": {
+            "_type": "Collection",
+            "total": 0,
+            "count": 0,
+            "_embedded": {
+                "elements": []
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/v3/work_packages/32070/relations"
+                }
+            }
+        },
+        "type": {
+            "_type": "Type",
+            "id": 11,
+            "name": "AI运营工单",
+            "color": "#00B0F0",
+            "position": 11,
+            "isDefault": false,
+            "isMilestone": false,
+            "createdAt": "2025-03-17T09:47:09.149Z",
+            "updatedAt": "2026-02-25T09:18:22.073Z",
+            "_links": {
+                "self": {
+                    "href": "/api/v3/types/11",
+                    "title": "AI运营工单"
+                }
+            }
+        },
+        "priority": {
+            "_type": "Priority",
+            "id": 8,
+            "name": "中（P2）",
+            "position": 2,
+            "color": "#74C0FC",
+            "isDefault": true,
+            "isActive": true,
+            "_links": {
+                "self": {
+                    "href": "/api/v3/priorities/8",
+                    "title": "中（P2）"
+                }
+            }
+        },
+        "project": {
+            "_type": "Project",
+            "id": 26,
+            "identifier": "aiyun-ying",
+            "name": "AI运营",
+            "active": true,
+            "public": true,
+            "description": {
+                "format": "markdown",
+                "raw": "",
+                "html": ""
+            },
+            "createdAt": "2025-03-17T09:46:00.721Z",
+            "updatedAt": "2025-03-17T10:08:41.649Z",
+            "statusExplanation": {
+                "format": "markdown",
+                "raw": "",
+                "html": ""
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/v3/projects/26",
+                    "title": "AI运营"
+                },
+                "createWorkPackage": {
+                    "href": "/api/v3/projects/26/work_packages/form",
+                    "method": "post"
+                },
+                "createWorkPackageImmediately": {
+                    "href": "/api/v3/projects/26/work_packages",
+                    "method": "post"
+                },
+                "workPackages": {
+                    "href": "/api/v3/projects/26/work_packages"
+                },
+                "categories": {
+                    "href": "/api/v3/projects/26/categories"
+                },
+                "versions": {
+                    "href": "/api/v3/projects/26/versions"
+                },
+                "memberships": {
+                    "href": "/api/v3/memberships?filters=%5B%7B%22project%22%3A%7B%22operator%22%3A%22%3D%22%2C%22values%22%3A%5B%2226%22%5D%7D%7D%5D"
+                },
+                "types": {
+                    "href": "/api/v3/projects/26/types"
+                },
+                "schema": {
+                    "href": "/api/v3/projects/schema"
+                },
+                "status": {
+                    "href": "/api/v3/project_statuses/on_track",
+                    "title": "按计划进行"
+                },
+                "ancestors": [],
+                "projectStorages": {
+                    "href": "/api/v3/project_storages?filters=%5B%7B%22projectId%22%3A%7B%22operator%22%3A%22%3D%22%2C%22values%22%3A%5B%2226%22%5D%7D%7D%5D"
+                },
+                "parent": {
+                    "href": null
+                }
+            }
+        },
+        "status": {
+            "_type": "Status",
+            "id": 12,
+            "name": "已关闭",
+            "isClosed": true,
+            "color": "#DEE2E6",
+            "isDefault": false,
+            "isReadonly": false,
+            "defaultDoneRatio": null,
+            "position": 17,
+            "_links": {
+                "self": {
+                    "href": "/api/v3/statuses/12",
+                    "title": "已关闭"
+                }
+            }
+        },
+        "author": {
+            "_type": "User",
+            "id": 131,
+            "name": "余小琴",
+            "avatar": "",
+            "customField4": "15711632614",
+            "customField36": "客服",
+            "_links": {
+                "self": {
+                    "href": "/api/v3/users/131",
+                    "title": "余小琴"
+                },
+                "memberships": {
+                    "href": "/api/v3/memberships?filters=%5B%7B%22principal%22%3A%7B%22operator%22%3A%22%3D%22%2C%22values%22%3A%5B%22131%22%5D%7D%7D%5D",
+                    "title": "成员"
+                },
+                "showUser": {
+                    "href": "/users/131",
+                    "type": "text/html"
+                }
+            }
+        },
+        "assignee": {
+            "_type": "User",
+            "id": 131,
+            "name": "余小琴",
+            "avatar": "",
+            "customField4": "15711632614",
+            "customField36": "客服",
+            "_links": {
+                "self": {
+                    "href": "/api/v3/users/131",
+                    "title": "余小琴"
+                },
+                "memberships": {
+                    "href": "/api/v3/memberships?filters=%5B%7B%22principal%22%3A%7B%22operator%22%3A%22%3D%22%2C%22values%22%3A%5B%22131%22%5D%7D%7D%5D",
+                    "title": "成员"
+                },
+                "showUser": {
+                    "href": "/users/131",
+                    "type": "text/html"
+                }
+            }
+        },
+        "customActions": [],
+        "costsByType": {
+            "_type": "Collection",
+            "total": 0,
+            "count": 0,
+            "_embedded": {
+                "elements": []
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/v3/work_packages/32070/summarized_costs_by_type"
+                }
+            }
+        }
+    },
+    "_type": "WorkPackage",
+    "id": 32070,
+    "lockVersion": 6,
+    "subject": "清远长隆长颈鹿城堡酒店-AI知识库调整",
+    "description": {
+        "format": "markdown",
+        "raw": "【机器人类型】  \n内线AI\n\n【问题反馈人】\n\n小鹏\n\n【问题描述】  \n麻烦按照附件表格进行调整，谢谢",
+        "html": "<p class=\"op-uc-p\">【机器人类型】<br>\n内线AI</p>\n<p class=\"op-uc-p\">【问题反馈人】</p>\n<p class=\"op-uc-p\">小鹏</p>\n<p class=\"op-uc-p\">【问题描述】<br>\n麻烦按照附件表格进行调整，谢谢</p>"
+    },
+    "scheduleManually": false,
+    "startDate": "2026-06-01",
+    "dueDate": "2026-06-01",
+    "estimatedTime": null,
+    "derivedEstimatedTime": null,
+    "remainingTime": null,
+    "derivedRemainingTime": null,
+    "duration": "P1D",
+    "ignoreNonWorkingDays": false,
+    "percentageDone": 100,
+    "createdAt": "2026-06-01T00:12:17.666Z",
+    "updatedAt": "2026-06-01T01:29:33.029Z",
+    "readonly": false,
+    "customField7": "2026-06-01",
+    "customField9": "清远长隆长颈鹿城堡酒店",
+    "customField10": null,
+    "customField23": null,
+    "customField45": true,
+    "_links": {
+        "attachments": {
+            "href": "/api/v3/work_packages/32070/attachments"
+        },
+        "addAttachment": {
+            "href": "/api/v3/work_packages/32070/attachments",
+            "method": "post"
+        },
+        "update": {
+            "href": "/api/v3/work_packages/32070/form",
+            "method": "post"
+        },
+        "schema": {
+            "href": "/api/v3/work_packages/schemas/26-11"
+        },
+        "updateImmediately": {
+            "href": "/api/v3/work_packages/32070",
+            "method": "patch"
+        },
+        "logTime": {
+            "href": "/api/v3/time_entries",
+            "title": "Log time on 清远长隆长颈鹿城堡酒店-AI知识库调整"
+        },
+        "move": {
+            "href": "/work_packages/32070/move/new",
+            "type": "text/html",
+            "title": "Move 清远长隆长颈鹿城堡酒店-AI知识库调整"
+        },
+        "copy": {
+            "href": "/work_packages/32070/copy",
+            "title": "Copy 清远长隆长颈鹿城堡酒店-AI知识库调整"
+        },
+        "pdf": {
+            "href": "/work_packages/32070.pdf",
+            "type": "application/pdf",
+            "title": "Export as PDF"
+        },
+        "availableRelationCandidates": {
+            "href": "/api/v3/work_packages/32070/available_relation_candidates",
+            "title": "Potential work packages to relate to"
+        },
+        "activities": {
+            "href": "/api/v3/work_packages/32070/activities"
+        },
+        "availableWatchers": {
+            "href": "/api/v3/work_packages/32070/available_watchers"
+        },
+        "relations": {
+            "href": "/api/v3/work_packages/32070/relations"
+        },
+        "watchers": {
+            "href": "/api/v3/work_packages/32070/watchers"
+        },
+        "addWatcher": {
+            "href": "/api/v3/work_packages/32070/watchers",
+            "method": "post",
+            "payload": {
+                "user": {
+                    "href": "/api/v3/users/{user_id}"
+                }
+            },
+            "templated": true
+        },
+        "removeWatcher": {
+            "href": "/api/v3/work_packages/32070/watchers/{user_id}",
+            "method": "delete",
+            "templated": true
+        },
+        "addRelation": {
+            "href": "/api/v3/work_packages/32070/relations",
+            "method": "post",
+            "title": "Add relation"
+        },
+        "addChild": {
+            "href": "/api/v3/projects/aiyun-ying/work_packages",
+            "method": "post",
+            "title": "Add child of 清远长隆长颈鹿城堡酒店-AI知识库调整"
+        },
+        "changeParent": {
+            "href": "/api/v3/work_packages/32070",
+            "method": "patch",
+            "title": "Change parent of 清远长隆长颈鹿城堡酒店-AI知识库调整"
+        },
+        "addComment": {
+            "href": "/api/v3/work_packages/32070/activities",
+            "method": "post",
+            "title": "Add comment"
+        },
+        "previewMarkup": {
+            "href": "/api/v3/render/markdown?context=/api/v3/work_packages/32070",
+            "method": "post"
+        },
+        "timeEntries": {
+            "href": "/api/v3/time_entries?filters=%5B%7B%22work_package_id%22%3A%7B%22operator%22%3A%22%3D%22%2C%22values%22%3A%5B%2232070%22%5D%7D%7D%5D",
+            "title": "Time entries"
+        },
+        "category": {
+            "href": null
+        },
+        "type": {
+            "href": "/api/v3/types/11",
+            "title": "AI运营工单"
+        },
+        "priority": {
+            "href": "/api/v3/priorities/8",
+            "title": "中（P2）"
+        },
+        "project": {
+            "href": "/api/v3/projects/26",
+            "title": "AI运营"
+        },
+        "status": {
+            "href": "/api/v3/statuses/12",
+            "title": "已关闭"
+        },
+        "author": {
+            "href": "/api/v3/users/131",
+            "title": "余小琴"
+        },
+        "responsible": {
+            "href": null
+        },
+        "assignee": {
+            "href": "/api/v3/users/131",
+            "title": "余小琴"
+        },
+        "version": {
+            "href": null
+        },
+        "logCosts": {
+            "href": "/work_packages/32070/cost_entries/new",
+            "type": "text/html",
+            "title": "Log costs on 清远长隆长颈鹿城堡酒店-AI知识库调整"
+        },
+        "showCosts": {
+            "href": "/projects/26/cost_reports?fields%5B%5D=WorkPackageId&operators%5BWorkPackageId%5D=%3D&set_filter=1&values%5BWorkPackageId%5D=32070",
+            "type": "text/html",
+            "title": "Show cost entries"
+        },
+        "costsByType": {
+            "href": "/api/v3/work_packages/32070/summarized_costs_by_type"
+        },
+        "meetings": {
+            "href": "/work_packages/32070/tabs/meetings",
+            "title": "meetings"
+        },
+        "github_pull_requests": {
+            "href": "/api/v3/work_packages/32070/github_pull_requests",
+            "title": "GitHub pull requests"
+        },
+        "customField11": {
+            "title": "客户沟通群",
+            "href": "/api/v3/custom_options/25"
+        },
+        "customField48": {
+            "title": "AI工单",
+            "href": "/api/v3/custom_options/75"
+        },
+        "customField49": {
+            "title": "知识库调整",
+            "href": "/api/v3/custom_options/80"
+        },
+        "customField65": [
+            {
+                "title": "话术-修改",
+                "href": "/api/v3/custom_options/132"
+            }
+        ],
+        "customField66": [
+            {
+                "title": "自定义",
+                "href": "/api/v3/custom_options/150"
+            },
+            {
+                "title": "通用",
+                "href": "/api/v3/custom_options/149"
+            }
+        ],
+        "self": {
+            "href": "/api/v3/work_packages/32070",
+            "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+        },
+        "watch": {
+            "href": "/api/v3/work_packages/32070/watchers",
+            "method": "post",
+            "payload": {
+                "user": {
+                    "href": "/api/v3/users/173"
+                }
+            }
+        },
+        "ancestors": [],
+        "parent": {
+            "href": null,
+            "title": null
+        },
+        "customActions": []
+    }
+}

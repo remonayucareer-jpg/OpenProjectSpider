@@ -1,0 +1,970 @@
+{derivedStartDate: null, derivedDueDate: null, spentTime: "PT0S", materialCosts: "0.00 RMB",…}
+createdAt
+: 
+"2026-06-01T00:12:17.666Z"
+customField7
+: 
+"2026-06-01"
+customField9
+: 
+"清远长隆长颈鹿城堡酒店"
+customField10
+: 
+null
+customField23
+: 
+null
+customField45
+: 
+true
+derivedDueDate
+: 
+null
+derivedEstimatedTime
+: 
+null
+derivedRemainingTime
+: 
+null
+derivedStartDate
+: 
+null
+description
+: 
+{format: "markdown", raw: "【机器人类型】 ↵内线AI↵↵【问题反馈人】↵↵小鹏↵↵【问题描述】 ↵麻烦按照附件表格进行调整，谢谢",…}
+format
+: 
+"markdown"
+html
+: 
+"<p class=\"op-uc-p\">【机器人类型】<br>\n内线AI</p>\n<p class=\"op-uc-p\">【问题反馈人】</p>\n<p class=\"op-uc-p\">小鹏</p>\n<p class=\"op-uc-p\">【问题描述】<br>\n麻烦按照附件表格进行调整，谢谢</p>"
+raw
+: 
+"【机器人类型】  \n内线AI\n\n【问题反馈人】\n\n小鹏\n\n【问题描述】  \n麻烦按照附件表格进行调整，谢谢"
+dueDate
+: 
+"2026-06-01"
+duration
+: 
+"P1D"
+estimatedTime
+: 
+null
+id
+: 
+32070
+ignoreNonWorkingDays
+: 
+false
+lockVersion
+: 
+6
+materialCosts
+: 
+"0.00 RMB"
+overallCosts
+: 
+"0.00 RMB"
+percentageDone
+: 
+100
+readonly
+: 
+false
+remainingTime
+: 
+null
+scheduleManually
+: 
+false
+spentTime
+: 
+"PT0S"
+startDate
+: 
+"2026-06-01"
+subject
+: 
+"清远长隆长颈鹿城堡酒店-AI知识库调整"
+updatedAt
+: 
+"2026-06-01T01:29:33.029Z"
+_embedded
+: 
+{attachments: {_type: "Collection", total: 11, count: 11,…},…}
+assignee
+: 
+{_type: "User", id: 131, name: "余小琴", avatar: "", customField4: "15711632614", customField36: "客服",…}
+avatar
+: 
+""
+customField4
+: 
+"15711632614"
+customField36
+: 
+"客服"
+id
+: 
+131
+name
+: 
+"余小琴"
+_links
+: 
+{self: {href: "/api/v3/users/131", title: "余小琴"}, memberships: {,…},…}
+memberships
+: 
+{,…}
+href
+: 
+"/api/v3/memberships?filters=%5B%7B%22principal%22%3A%7B%22operator%22%3A%22%3D%22%2C%22values%22%3A%5B%22131%22%5D%7D%7D%5D"
+title
+: 
+"成员"
+self
+: 
+{href: "/api/v3/users/131", title: "余小琴"}
+href
+: 
+"/api/v3/users/131"
+title
+: 
+"余小琴"
+showUser
+: 
+{href: "/users/131", type: "text/html"}
+href
+: 
+"/users/131"
+type
+: 
+"text/html"
+_type
+: 
+"User"
+attachments
+: 
+{_type: "Collection", total: 11, count: 11,…}
+count
+: 
+11
+total
+: 
+11
+_embedded
+: 
+{elements: [{_type: "Attachment", id: 34564, fileName: "image.png", fileSize: 33815,…},…]}
+elements
+: 
+[{_type: "Attachment", id: 34564, fileName: "image.png", fileSize: 33815,…},…]
+_links
+: 
+{self: {href: "/api/v3/work_packages/32070/attachments"}}
+self
+: 
+{href: "/api/v3/work_packages/32070/attachments"}
+href
+: 
+"/api/v3/work_packages/32070/attachments"
+_type
+: 
+"Collection"
+author
+: 
+{_type: "User", id: 131, name: "余小琴", avatar: "", customField4: "15711632614", customField36: "客服",…}
+avatar
+: 
+""
+customField4
+: 
+"15711632614"
+customField36
+: 
+"客服"
+id
+: 
+131
+name
+: 
+"余小琴"
+_links
+: 
+{self: {href: "/api/v3/users/131", title: "余小琴"}, memberships: {,…},…}
+memberships
+: 
+{,…}
+href
+: 
+"/api/v3/memberships?filters=%5B%7B%22principal%22%3A%7B%22operator%22%3A%22%3D%22%2C%22values%22%3A%5B%22131%22%5D%7D%7D%5D"
+title
+: 
+"成员"
+self
+: 
+{href: "/api/v3/users/131", title: "余小琴"}
+href
+: 
+"/api/v3/users/131"
+title
+: 
+"余小琴"
+showUser
+: 
+{href: "/users/131", type: "text/html"}
+href
+: 
+"/users/131"
+type
+: 
+"text/html"
+_type
+: 
+"User"
+costsByType
+: 
+{_type: "Collection", total: 0, count: 0, _embedded: {elements: []},…}
+count
+: 
+0
+total
+: 
+0
+_embedded
+: 
+{elements: []}
+elements
+: 
+[]
+_links
+: 
+{self: {href: "/api/v3/work_packages/32070/summarized_costs_by_type"}}
+self
+: 
+{href: "/api/v3/work_packages/32070/summarized_costs_by_type"}
+href
+: 
+"/api/v3/work_packages/32070/summarized_costs_by_type"
+_type
+: 
+"Collection"
+customActions
+: 
+[]
+priority
+: 
+{_type: "Priority", id: 8, name: "中（P2）", position: 2, color: "#74C0FC", isDefault: true,…}
+color
+: 
+"#74C0FC"
+id
+: 
+8
+isActive
+: 
+true
+isDefault
+: 
+true
+name
+: 
+"中（P2）"
+position
+: 
+2
+_links
+: 
+{self: {href: "/api/v3/priorities/8", title: "中（P2）"}}
+self
+: 
+{href: "/api/v3/priorities/8", title: "中（P2）"}
+href
+: 
+"/api/v3/priorities/8"
+title
+: 
+"中（P2）"
+_type
+: 
+"Priority"
+project
+: 
+{_type: "Project", id: 26, identifier: "aiyun-ying", name: "AI运营", active: true, public: true,…}
+active
+: 
+true
+createdAt
+: 
+"2025-03-17T09:46:00.721Z"
+description
+: 
+{format: "markdown", raw: "", html: ""}
+format
+: 
+"markdown"
+html
+: 
+""
+raw
+: 
+""
+id
+: 
+26
+identifier
+: 
+"aiyun-ying"
+name
+: 
+"AI运营"
+public
+: 
+true
+statusExplanation
+: 
+{format: "markdown", raw: "", html: ""}
+format
+: 
+"markdown"
+html
+: 
+""
+raw
+: 
+""
+updatedAt
+: 
+"2025-03-17T10:08:41.649Z"
+_links
+: 
+{self: {href: "/api/v3/projects/26", title: "AI运营"},…}
+ancestors
+: 
+[]
+categories
+: 
+{href: "/api/v3/projects/26/categories"}
+href
+: 
+"/api/v3/projects/26/categories"
+createWorkPackage
+: 
+{href: "/api/v3/projects/26/work_packages/form", method: "post"}
+href
+: 
+"/api/v3/projects/26/work_packages/form"
+method
+: 
+"post"
+createWorkPackageImmediately
+: 
+{href: "/api/v3/projects/26/work_packages", method: "post"}
+href
+: 
+"/api/v3/projects/26/work_packages"
+method
+: 
+"post"
+memberships
+: 
+{,…}
+href
+: 
+"/api/v3/memberships?filters=%5B%7B%22project%22%3A%7B%22operator%22%3A%22%3D%22%2C%22values%22%3A%5B%2226%22%5D%7D%7D%5D"
+parent
+: 
+{href: null}
+href
+: 
+null
+projectStorages
+: 
+{,…}
+href
+: 
+"/api/v3/project_storages?filters=%5B%7B%22projectId%22%3A%7B%22operator%22%3A%22%3D%22%2C%22values%22%3A%5B%2226%22%5D%7D%7D%5D"
+schema
+: 
+{href: "/api/v3/projects/schema"}
+href
+: 
+"/api/v3/projects/schema"
+self
+: 
+{href: "/api/v3/projects/26", title: "AI运营"}
+href
+: 
+"/api/v3/projects/26"
+title
+: 
+"AI运营"
+status
+: 
+{href: "/api/v3/project_statuses/on_track", title: "按计划进行"}
+href
+: 
+"/api/v3/project_statuses/on_track"
+title
+: 
+"按计划进行"
+types
+: 
+{href: "/api/v3/projects/26/types"}
+href
+: 
+"/api/v3/projects/26/types"
+versions
+: 
+{href: "/api/v3/projects/26/versions"}
+href
+: 
+"/api/v3/projects/26/versions"
+workPackages
+: 
+{href: "/api/v3/projects/26/work_packages"}
+href
+: 
+"/api/v3/projects/26/work_packages"
+_type
+: 
+"Project"
+relations
+: 
+{_type: "Collection", total: 0, count: 0, _embedded: {elements: []},…}
+count
+: 
+0
+total
+: 
+0
+_embedded
+: 
+{elements: []}
+elements
+: 
+[]
+_links
+: 
+{self: {href: "/api/v3/work_packages/32070/relations"}}
+self
+: 
+{href: "/api/v3/work_packages/32070/relations"}
+href
+: 
+"/api/v3/work_packages/32070/relations"
+_type
+: 
+"Collection"
+status
+: 
+{_type: "Status", id: 12, name: "已关闭", isClosed: true, color: "#DEE2E6", isDefault: false,…}
+color
+: 
+"#DEE2E6"
+defaultDoneRatio
+: 
+null
+id
+: 
+12
+isClosed
+: 
+true
+isDefault
+: 
+false
+isReadonly
+: 
+false
+name
+: 
+"已关闭"
+position
+: 
+17
+_links
+: 
+{self: {href: "/api/v3/statuses/12", title: "已关闭"}}
+_type
+: 
+"Status"
+type
+: 
+{_type: "Type", id: 11, name: "AI运营工单", color: "#00B0F0", position: 11, isDefault: false,…}
+color
+: 
+"#00B0F0"
+createdAt
+: 
+"2025-03-17T09:47:09.149Z"
+id
+: 
+11
+isDefault
+: 
+false
+isMilestone
+: 
+false
+name
+: 
+"AI运营工单"
+position
+: 
+11
+updatedAt
+: 
+"2026-02-25T09:18:22.073Z"
+_links
+: 
+{self: {href: "/api/v3/types/11", title: "AI运营工单"}}
+self
+: 
+{href: "/api/v3/types/11", title: "AI运营工单"}
+href
+: 
+"/api/v3/types/11"
+title
+: 
+"AI运营工单"
+_type
+: 
+"Type"
+_links
+: 
+{attachments: {href: "/api/v3/work_packages/32070/attachments"},…}
+activities
+: 
+{href: "/api/v3/work_packages/32070/activities"}
+href
+: 
+"/api/v3/work_packages/32070/activities"
+addAttachment
+: 
+{href: "/api/v3/work_packages/32070/attachments", method: "post"}
+href
+: 
+"/api/v3/work_packages/32070/attachments"
+method
+: 
+"post"
+addChild
+: 
+{href: "/api/v3/projects/aiyun-ying/work_packages", method: "post",…}
+href
+: 
+"/api/v3/projects/aiyun-ying/work_packages"
+method
+: 
+"post"
+title
+: 
+"Add child of 清远长隆长颈鹿城堡酒店-AI知识库调整"
+addComment
+: 
+{href: "/api/v3/work_packages/32070/activities", method: "post", title: "Add comment"}
+href
+: 
+"/api/v3/work_packages/32070/activities"
+method
+: 
+"post"
+title
+: 
+"Add comment"
+addRelation
+: 
+{href: "/api/v3/work_packages/32070/relations", method: "post", title: "Add relation"}
+href
+: 
+"/api/v3/work_packages/32070/relations"
+method
+: 
+"post"
+title
+: 
+"Add relation"
+addWatcher
+: 
+{href: "/api/v3/work_packages/32070/watchers", method: "post",…}
+href
+: 
+"/api/v3/work_packages/32070/watchers"
+method
+: 
+"post"
+payload
+: 
+{user: {href: "/api/v3/users/{user_id}"}}
+user
+: 
+{href: "/api/v3/users/{user_id}"}
+href
+: 
+"/api/v3/users/{user_id}"
+templated
+: 
+true
+ancestors
+: 
+[]
+assignee
+: 
+{href: "/api/v3/users/131", title: "余小琴"}
+href
+: 
+"/api/v3/users/131"
+title
+: 
+"余小琴"
+attachments
+: 
+{href: "/api/v3/work_packages/32070/attachments"}
+href
+: 
+"/api/v3/work_packages/32070/attachments"
+author
+: 
+{href: "/api/v3/users/131", title: "余小琴"}
+href
+: 
+"/api/v3/users/131"
+title
+: 
+"余小琴"
+availableRelationCandidates
+: 
+{href: "/api/v3/work_packages/32070/available_relation_candidates",…}
+href
+: 
+"/api/v3/work_packages/32070/available_relation_candidates"
+title
+: 
+"Potential work packages to relate to"
+availableWatchers
+: 
+{href: "/api/v3/work_packages/32070/available_watchers"}
+href
+: 
+"/api/v3/work_packages/32070/available_watchers"
+category
+: 
+{href: null}
+href
+: 
+null
+changeParent
+: 
+{href: "/api/v3/work_packages/32070", method: "patch", title: "Change parent of 清远长隆长颈鹿城堡酒店-AI知识库调整"}
+href
+: 
+"/api/v3/work_packages/32070"
+method
+: 
+"patch"
+title
+: 
+"Change parent of 清远长隆长颈鹿城堡酒店-AI知识库调整"
+copy
+: 
+{href: "/work_packages/32070/copy", title: "Copy 清远长隆长颈鹿城堡酒店-AI知识库调整"}
+href
+: 
+"/work_packages/32070/copy"
+title
+: 
+"Copy 清远长隆长颈鹿城堡酒店-AI知识库调整"
+costsByType
+: 
+{href: "/api/v3/work_packages/32070/summarized_costs_by_type"}
+customActions
+: 
+[]
+customField11
+: 
+{title: "客户沟通群", href: "/api/v3/custom_options/25"}
+href
+: 
+"/api/v3/custom_options/25"
+title
+: 
+"客户沟通群"
+customField48
+: 
+{title: "AI工单", href: "/api/v3/custom_options/75"}
+href
+: 
+"/api/v3/custom_options/75"
+title
+: 
+"AI工单"
+customField49
+: 
+{title: "知识库调整", href: "/api/v3/custom_options/80"}
+href
+: 
+"/api/v3/custom_options/80"
+title
+: 
+"知识库调整"
+customField65
+: 
+[{title: "话术-修改", href: "/api/v3/custom_options/132"}]
+0
+: 
+{title: "话术-修改", href: "/api/v3/custom_options/132"}
+href
+: 
+"/api/v3/custom_options/132"
+title
+: 
+"话术-修改"
+customField66
+: 
+[{title: "自定义", href: "/api/v3/custom_options/150"}, {title: "通用", href: "/api/v3/custom_options/149"}]
+0
+: 
+{title: "自定义", href: "/api/v3/custom_options/150"}
+href
+: 
+"/api/v3/custom_options/150"
+title
+: 
+"自定义"
+1
+: 
+{title: "通用", href: "/api/v3/custom_options/149"}
+href
+: 
+"/api/v3/custom_options/149"
+title
+: 
+"通用"
+github_pull_requests
+: 
+{href: "/api/v3/work_packages/32070/github_pull_requests", title: "GitHub pull requests"}
+href
+: 
+"/api/v3/work_packages/32070/github_pull_requests"
+title
+: 
+"GitHub pull requests"
+logCosts
+: 
+{href: "/work_packages/32070/cost_entries/new", type: "text/html",…}
+href
+: 
+"/work_packages/32070/cost_entries/new"
+title
+: 
+"Log costs on 清远长隆长颈鹿城堡酒店-AI知识库调整"
+type
+: 
+"text/html"
+logTime
+: 
+{href: "/api/v3/time_entries", title: "Log time on 清远长隆长颈鹿城堡酒店-AI知识库调整"}
+href
+: 
+"/api/v3/time_entries"
+title
+: 
+"Log time on 清远长隆长颈鹿城堡酒店-AI知识库调整"
+meetings
+: 
+{href: "/work_packages/32070/tabs/meetings", title: "meetings"}
+href
+: 
+"/work_packages/32070/tabs/meetings"
+title
+: 
+"meetings"
+move
+: 
+{href: "/work_packages/32070/move/new", type: "text/html", title: "Move 清远长隆长颈鹿城堡酒店-AI知识库调整"}
+href
+: 
+"/work_packages/32070/move/new"
+title
+: 
+"Move 清远长隆长颈鹿城堡酒店-AI知识库调整"
+type
+: 
+"text/html"
+parent
+: 
+{href: null, title: null}
+href
+: 
+null
+title
+: 
+null
+pdf
+: 
+{href: "/work_packages/32070.pdf", type: "application/pdf", title: "Export as PDF"}
+href
+: 
+"/work_packages/32070.pdf"
+title
+: 
+"Export as PDF"
+type
+: 
+"application/pdf"
+previewMarkup
+: 
+{href: "/api/v3/render/markdown?context=/api/v3/work_packages/32070", method: "post"}
+href
+: 
+"/api/v3/render/markdown?context=/api/v3/work_packages/32070"
+method
+: 
+"post"
+priority
+: 
+{href: "/api/v3/priorities/8", title: "中（P2）"}
+href
+: 
+"/api/v3/priorities/8"
+title
+: 
+"中（P2）"
+project
+: 
+{href: "/api/v3/projects/26", title: "AI运营"}
+href
+: 
+"/api/v3/projects/26"
+title
+: 
+"AI运营"
+relations
+: 
+{href: "/api/v3/work_packages/32070/relations"}
+href
+: 
+"/api/v3/work_packages/32070/relations"
+removeWatcher
+: 
+{href: "/api/v3/work_packages/32070/watchers/{user_id}", method: "delete", templated: true}
+href
+: 
+"/api/v3/work_packages/32070/watchers/{user_id}"
+method
+: 
+"delete"
+templated
+: 
+true
+responsible
+: 
+{href: null}
+href
+: 
+null
+schema
+: 
+{href: "/api/v3/work_packages/schemas/26-11"}
+href
+: 
+"/api/v3/work_packages/schemas/26-11"
+self
+: 
+{href: "/api/v3/work_packages/32070", title: "清远长隆长颈鹿城堡酒店-AI知识库调整"}
+href
+: 
+"/api/v3/work_packages/32070"
+title
+: 
+"清远长隆长颈鹿城堡酒店-AI知识库调整"
+showCosts
+: 
+{,…}
+href
+: 
+"/projects/26/cost_reports?fields%5B%5D=WorkPackageId&operators%5BWorkPackageId%5D=%3D&set_filter=1&values%5BWorkPackageId%5D=32070"
+title
+: 
+"Show cost entries"
+type
+: 
+"text/html"
+status
+: 
+{href: "/api/v3/statuses/12", title: "已关闭"}
+href
+: 
+"/api/v3/statuses/12"
+title
+: 
+"已关闭"
+timeEntries
+: 
+{,…}
+href
+: 
+"/api/v3/time_entries?filters=%5B%7B%22work_package_id%22%3A%7B%22operator%22%3A%22%3D%22%2C%22values%22%3A%5B%2232070%22%5D%7D%7D%5D"
+title
+: 
+"Time entries"
+type
+: 
+{href: "/api/v3/types/11", title: "AI运营工单"}
+href
+: 
+"/api/v3/types/11"
+title
+: 
+"AI运营工单"
+update
+: 
+{href: "/api/v3/work_packages/32070/form", method: "post"}
+href
+: 
+"/api/v3/work_packages/32070/form"
+method
+: 
+"post"
+updateImmediately
+: 
+{href: "/api/v3/work_packages/32070", method: "patch"}
+href
+: 
+"/api/v3/work_packages/32070"
+method
+: 
+"patch"
+version
+: 
+{href: null}
+href
+: 
+null
+watch
+: 
+{href: "/api/v3/work_packages/32070/watchers", method: "post",…}
+href
+: 
+"/api/v3/work_packages/32070/watchers"
+method
+: 
+"post"
+payload
+: 
+{user: {href: "/api/v3/users/173"}}
+user
+: 
+{href: "/api/v3/users/173"}
+href
+: 
+"/api/v3/users/173"
+watchers
+: 
+{href: "/api/v3/work_packages/32070/watchers"}
+href
+: 
+"/api/v3/work_packages/32070/watchers"
+_type
+: 
+"WorkPackage"

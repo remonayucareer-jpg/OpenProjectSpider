@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.log
+openproject_ai_work_packages_*.xlsx
+.streamlit/secrets.toml

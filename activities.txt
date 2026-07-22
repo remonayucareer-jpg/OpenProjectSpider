@@ -1,0 +1,650 @@
+{
+    "_type": "Collection",
+    "total": 17,
+    "count": 17,
+    "_embedded": {
+        "elements": [
+            {
+                "_type": "Activity",
+                "id": 334910,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "类型 设置为 AI运营工单",
+                        "html": "<strong>类型</strong> 设置为 <i>AI运营工单</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "项目 设置为 AI运营",
+                        "html": "<strong>项目</strong> 设置为 <i>AI运营</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "主题 设置为 清远长隆长颈鹿城堡酒店-AI知识库调整",
+                        "html": "<strong>主题</strong> 设置为 <i>清远长隆长颈鹿城堡酒店-AI知识库调整</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "描述 设置 (/journals/334910/diff/description)",
+                        "html": "<strong>描述</strong> 设置 (<a class=\"description-details\" href=\"/journals/334910/diff/description?activity_page=work_packages%2F32070\">详细信息</a>)"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "状态 设置为 新",
+                        "html": "<strong>状态</strong> 设置为 <i>新</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "受理人 设置为 AI-配置组",
+                        "html": "<strong>受理人</strong> 设置为 <i>AI-配置组</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "优先级 设置为 中（P2）",
+                        "html": "<strong>优先级</strong> 设置为 <i>中（P2）</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "作者 设置为 余小琴",
+                        "html": "<strong>作者</strong> 设置为 <i>余小琴</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "% 完成 已从 0 更改为 0",
+                        "html": "<strong>% 完成</strong> 已从 <i>0</i> 更改为 <i>0</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "开始日期 设置为 2026-06-01",
+                        "html": "<strong>开始日期</strong> 设置为 <i>2026-06-01</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "手动计划 已取消激活",
+                        "html": "<strong>手动计划</strong> 已取消激活"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "工作日 设置为 仅工作日",
+                        "html": "<strong>工作日</strong> 设置为 <i>仅工作日</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "文件 每周给华客更改的营业时间模板5月31日.docx 已添加为附件",
+                        "html": "<strong>文件</strong> <a href=\"https://pmo.cemsmart.com/api/v3/attachments/34549/content\">每周给华客更改的营业时间模板5月31日.docx</a> 已添加为附件"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "报障来源 设置为 客户沟通群",
+                        "html": "<strong>报障来源</strong> 设置为 <i>客户沟通群</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "AI项目 设置为 AI工单",
+                        "html": "<strong>AI项目</strong> 设置为 <i>AI工单</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "报障时间 设置为 2026-06-01",
+                        "html": "<strong>报障时间</strong> 设置为 <i>2026-06-01</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "酒店名称 设置为 清远长隆长颈鹿城堡酒店",
+                        "html": "<strong>酒店名称</strong> 设置为 <i>清远长隆长颈鹿城堡酒店</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "AI类别 设置为 知识库调整",
+                        "html": "<strong>AI类别</strong> 设置为 <i>知识库调整</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "是否VIP客户 设置为 是",
+                        "html": "<strong>是否VIP客户</strong> 设置为 <i>是</i>"
+                    }
+                ],
+                "version": 1,
+                "createdAt": "2026-06-01T00:12:17.666Z",
+                "updatedAt": "2026-06-01T00:12:17.666Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334910"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334919,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "状态 已从 新 更改为 进行中",
+                        "html": "<strong>状态</strong> 已从 <i>新</i> 更改为 <i>进行中</i>"
+                    }
+                ],
+                "version": 2,
+                "createdAt": "2026-06-01T00:26:18.925Z",
+                "updatedAt": "2026-06-01T00:26:18.925Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334919"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/176"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334920,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "状态 已从 进行中 更改为 已解决",
+                        "html": "<strong>状态</strong> 已从 <i>进行中</i> 更改为 <i>已解决</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "% 完成 已从 0 更改为 100",
+                        "html": "<strong>% 完成</strong> 已从 <i>0</i> 更改为 <i>100</i>"
+                    }
+                ],
+                "version": 3,
+                "createdAt": "2026-06-01T00:29:28.403Z",
+                "updatedAt": "2026-06-01T00:29:28.403Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334920"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/176"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334921,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "描述 已更改 (/journals/334921/diff/description)",
+                        "html": "<strong>描述</strong> 已更改 (<a class=\"description-details\" href=\"/journals/334921/diff/description?activity_page=work_packages%2F32070\">详细信息</a>)"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "解决方案 设置为 话术-修改",
+                        "html": "<strong>解决方案</strong> 设置为 <i>话术-修改</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "通用/自定义 设置为 通用, 自定义",
+                        "html": "<strong>通用/自定义</strong> 设置为 <i>通用, 自定义</i>"
+                    }
+                ],
+                "version": 4,
+                "createdAt": "2026-06-01T00:29:34.357Z",
+                "updatedAt": "2026-06-01T00:29:34.357Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334921"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/176"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334922,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "受理人 已从 AI-配置组 更改为 余小琴",
+                        "html": "<strong>受理人</strong> 已从 <i>AI-配置组</i> 更改为 <i>余小琴</i>"
+                    }
+                ],
+                "version": 5,
+                "createdAt": "2026-06-01T00:29:39.507Z",
+                "updatedAt": "2026-06-01T00:29:39.507Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334922"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/176"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334959,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "文件 image.png 已添加为附件",
+                        "html": "<strong>文件</strong> <a href=\"https://pmo.cemsmart.com/api/v3/attachments/34555/content\">image.png</a> 已添加为附件"
+                    }
+                ],
+                "version": 6,
+                "createdAt": "2026-06-01T01:23:33.083Z",
+                "updatedAt": "2026-06-01T01:23:33.083Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334959"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334961,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "文件 image.png 已添加为附件",
+                        "html": "<strong>文件</strong> <a href=\"https://pmo.cemsmart.com/api/v3/attachments/34556/content\">image.png</a> 已添加为附件"
+                    }
+                ],
+                "version": 7,
+                "createdAt": "2026-06-01T01:24:00.952Z",
+                "updatedAt": "2026-06-01T01:24:00.952Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334961"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334963,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "文件 image.png 已添加为附件",
+                        "html": "<strong>文件</strong> <a href=\"https://pmo.cemsmart.com/api/v3/attachments/34557/content\">image.png</a> 已添加为附件"
+                    }
+                ],
+                "version": 8,
+                "createdAt": "2026-06-01T01:24:22.928Z",
+                "updatedAt": "2026-06-01T01:24:22.928Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334963"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334965,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "文件 image.png 已添加为附件",
+                        "html": "<strong>文件</strong> <a href=\"https://pmo.cemsmart.com/api/v3/attachments/34558/content\">image.png</a> 已添加为附件"
+                    }
+                ],
+                "version": 9,
+                "createdAt": "2026-06-01T01:24:44.068Z",
+                "updatedAt": "2026-06-01T01:24:44.068Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334965"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334967,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "文件 image.png 已添加为附件",
+                        "html": "<strong>文件</strong> <a href=\"https://pmo.cemsmart.com/api/v3/attachments/34559/content\">image.png</a> 已添加为附件"
+                    }
+                ],
+                "version": 10,
+                "createdAt": "2026-06-01T01:26:29.896Z",
+                "updatedAt": "2026-06-01T01:26:29.896Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334967"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334969,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "文件 image.png 已添加为附件",
+                        "html": "<strong>文件</strong> <a href=\"https://pmo.cemsmart.com/api/v3/attachments/34560/content\">image.png</a> 已添加为附件"
+                    }
+                ],
+                "version": 11,
+                "createdAt": "2026-06-01T01:26:48.980Z",
+                "updatedAt": "2026-06-01T01:26:48.980Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334969"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334971,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "文件 image.png 已添加为附件",
+                        "html": "<strong>文件</strong> <a href=\"https://pmo.cemsmart.com/api/v3/attachments/34561/content\">image.png</a> 已添加为附件"
+                    }
+                ],
+                "version": 12,
+                "createdAt": "2026-06-01T01:27:05.663Z",
+                "updatedAt": "2026-06-01T01:27:05.663Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334971"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334973,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "文件 image.png 已添加为附件",
+                        "html": "<strong>文件</strong> <a href=\"https://pmo.cemsmart.com/api/v3/attachments/34562/content\">image.png</a> 已添加为附件"
+                    }
+                ],
+                "version": 13,
+                "createdAt": "2026-06-01T01:27:27.491Z",
+                "updatedAt": "2026-06-01T01:27:27.491Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334973"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334975,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "文件 image.png 已添加为附件",
+                        "html": "<strong>文件</strong> <a href=\"https://pmo.cemsmart.com/api/v3/attachments/34563/content\">image.png</a> 已添加为附件"
+                    }
+                ],
+                "version": 14,
+                "createdAt": "2026-06-01T01:27:48.830Z",
+                "updatedAt": "2026-06-01T01:27:48.830Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334975"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334977,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "文件 image.png 已添加为附件",
+                        "html": "<strong>文件</strong> <a href=\"https://pmo.cemsmart.com/api/v3/attachments/34564/content\">image.png</a> 已添加为附件"
+                    }
+                ],
+                "version": 15,
+                "createdAt": "2026-06-01T01:28:11.841Z",
+                "updatedAt": "2026-06-01T01:28:11.841Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334977"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity::Comment",
+                "id": 334978,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "已验证\n\n<img class=\"op-uc-image op-uc-image_inline\" src=\"/api/v3/attachments/34555/content\">\n\n<img class=\"op-uc-image op-uc-image_inline\" src=\"/api/v3/attachments/34556/content\">\n\n<img class=\"op-uc-image op-uc-image_inline\" src=\"/api/v3/attachments/34557/content\">\n\n<img class=\"op-uc-image op-uc-image_inline\" src=\"/api/v3/attachments/34558/content\">\n\n<img class=\"op-uc-image op-uc-image_inline\" src=\"/api/v3/attachments/34559/content\">\n\n<img class=\"op-uc-image op-uc-image_inline\" src=\"/api/v3/attachments/34560/content\">\n\n<img class=\"op-uc-image op-uc-image_inline\" src=\"/api/v3/attachments/34561/content\">\n\n<img class=\"op-uc-image op-uc-image_inline\" src=\"/api/v3/attachments/34562/content\">\n\n<img class=\"op-uc-image op-uc-image_inline\" src=\"/api/v3/attachments/34563/content\">\n\n<img class=\"op-uc-image op-uc-image_inline\" src=\"/api/v3/attachments/34564/content\">",
+                    "html": "<p class=\"op-uc-p\">已验证</p>\n<figure class=\"op-uc-figure\"><div class=\"op-uc-figure--content\"><img src=\"/api/v3/attachments/34555/content\" class=\"op-uc-image\"></div></figure>\n<figure class=\"op-uc-figure\"><div class=\"op-uc-figure--content\"><img src=\"/api/v3/attachments/34556/content\" class=\"op-uc-image\"></div></figure>\n<figure class=\"op-uc-figure\"><div class=\"op-uc-figure--content\"><img src=\"/api/v3/attachments/34557/content\" class=\"op-uc-image\"></div></figure>\n<figure class=\"op-uc-figure\"><div class=\"op-uc-figure--content\"><img src=\"/api/v3/attachments/34558/content\" class=\"op-uc-image\"></div></figure>\n<figure class=\"op-uc-figure\"><div class=\"op-uc-figure--content\"><img src=\"/api/v3/attachments/34559/content\" class=\"op-uc-image\"></div></figure>\n<figure class=\"op-uc-figure\"><div class=\"op-uc-figure--content\"><img src=\"/api/v3/attachments/34560/content\" class=\"op-uc-image\"></div></figure>\n<figure class=\"op-uc-figure\"><div class=\"op-uc-figure--content\"><img src=\"/api/v3/attachments/34561/content\" class=\"op-uc-image\"></div></figure>\n<figure class=\"op-uc-figure\"><div class=\"op-uc-figure--content\"><img src=\"/api/v3/attachments/34562/content\" class=\"op-uc-image\"></div></figure>\n<figure class=\"op-uc-figure\"><div class=\"op-uc-figure--content\"><img src=\"/api/v3/attachments/34563/content\" class=\"op-uc-image\"></div></figure>\n<figure class=\"op-uc-figure\"><div class=\"op-uc-figure--content\"><img src=\"/api/v3/attachments/34564/content\" class=\"op-uc-image\"></div></figure>"
+                },
+                "details": [],
+                "version": 16,
+                "createdAt": "2026-06-01T01:28:13.817Z",
+                "updatedAt": "2026-06-01T01:28:13.817Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334978"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            },
+            {
+                "_type": "Activity",
+                "id": 334980,
+                "comment": {
+                    "format": "markdown",
+                    "raw": "",
+                    "html": ""
+                },
+                "details": [
+                    {
+                        "format": "custom",
+                        "raw": "完成日期 设置为 2026-06-01",
+                        "html": "<strong>完成日期</strong> 设置为 <i>2026-06-01</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "状态 已从 已解决 更改为 已关闭",
+                        "html": "<strong>状态</strong> 已从 <i>已解决</i> 更改为 <i>已关闭</i>"
+                    },
+                    {
+                        "format": "custom",
+                        "raw": "持续时间 设置为 1 天",
+                        "html": "<strong>持续时间</strong> 设置为 <i>1 天</i>"
+                    }
+                ],
+                "version": 17,
+                "createdAt": "2026-06-01T01:29:33.029Z",
+                "updatedAt": "2026-06-01T01:29:33.029Z",
+                "_links": {
+                    "self": {
+                        "href": "/api/v3/activities/334980"
+                    },
+                    "workPackage": {
+                        "href": "/api/v3/work_packages/32070",
+                        "title": "清远长隆长颈鹿城堡酒店-AI知识库调整"
+                    },
+                    "user": {
+                        "href": "/api/v3/users/131"
+                    }
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "/api/v3/work_packages/32070/activities"
+        }
+    }
+}
