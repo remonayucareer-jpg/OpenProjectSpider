@@ -1,10 +1,10 @@
-from datetime import datetime
+from datetime import datetime, timedelta
+
 
 import streamlit as st
 import pandas as pd
 
 from openproject_exporter import (
-    DEFAULT_START_DATE,
     EXPORT_COLUMNS,
     build_excel_bytes,
     build_dataframe,
@@ -12,12 +12,16 @@ from openproject_exporter import (
 )
 
 
+
 st.set_page_config(page_title="OpenProject 工单导出", layout="wide")
 
 st.title("OpenProject 工单导出")
 st.caption("选择工单创建日期范围，系统会抓取 AI运营工单和 TS工单并生成 Excel。")
 
-default_date = datetime.strptime(DEFAULT_START_DATE, "%Y-%m-%d").date()
+# 默认日期：开始日期为7天前，结束日期为今天
+default_end_date = datetime.now().date()
+default_start_date = default_end_date - timedelta(days=7)
+
 
 
 def get_secret_value(name):
@@ -63,9 +67,10 @@ with st.sidebar:
 with st.form("export_form"):
     col1, col2 = st.columns(2)
     with col1:
-        start_date = st.date_input("开始日期", value=default_date)
+        start_date = st.date_input("开始日期", value=default_start_date)
     with col2:
-        end_date = st.date_input("结束日期", value=default_date)
+        end_date = st.date_input("结束日期", value=default_end_date)
+
 
     submitted = st.form_submit_button("抓取并预览数据", use_container_width=True)
 
