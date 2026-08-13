@@ -12,6 +12,14 @@ from urllib.request import HTTPSHandler, ProxyHandler, Request, build_opener, ur
 
 import pandas as pd
 
+# 尝试导入 pycurl（用于解决 OpenSSL 与服务器 TLS 不兼容的问题）
+try:
+    import pycurl
+    HAS_PYCURL = True
+except ImportError:
+    HAS_PYCURL = False
+
+
 
 BASE_URL = "https://pmo.cemsmart.com"
 TARGET_TYPE_ID = "11"
@@ -75,13 +83,44 @@ class OpenProjectClient:
             handlers.append(HTTPSHandler(context=self.ssl_context))
         self.opener = build_opener(*handlers) if handlers else None
 
+    def _get_json_with_pycurl(self, url):
+        """使用 pycurl 发起请求（解决 OpenSSL 与服务器 TLS 不兼容的问题）"""
+        buf = BytesIO()
+        c = pycurl.Curl()
+        try:
+            c.setopt(pycurl.URL, url)
+            c.setopt(pycurl.HTTPHEADER, [f"{k}: {v}" for k, v in self.headers.items()])
+            c.setopt(pycurl.SSL_VERIFYPEER, 0)
+            c.setopt(pycurl.SSL_VERIFYHOST, 0)
+            c.setopt(pycurl.WRITEDATA, buf)
+            c.setopt(pycurl.TIMEOUT, 60)
+            if DISABLE_SYSTEM_PROXY:
+                c.setopt(pycurl.PROXY, "")
+            c.perform()
+            status = c.getinfo(pycurl.RESPONSE_CODE)
+            if status >= 400:
+                raise Exception(f"HTTP {status}: {buf.getvalue().decode('utf-8', errors='replace')[:500]}")
+            return json.loads(buf.getvalue().decode("utf-8"))
+        finally:
+            c.close()
+
     def get_json(self, path, params=None):
         query = ""
         if params:
             query = "?" + "&".join(
                 f"{quote(str(key))}={quote(str(value))}" for key, value in params.items()
             )
-        request = Request(f"{BASE_URL}{path}{query}", headers=self.headers)
+        url = f"{BASE_URL}{path}{query}"
+
+        # 优先使用 pycurl（解决 OpenSSL 与服务器 TLS 不兼容的问题）
+        if HAS_PYCURL:
+            try:
+                return self._get_json_with_pycurl(url)
+            except Exception as e:
+                # pycurl 失败时回退到 urllib
+                pass
+
+        request = Request(url, headers=self.headers)
 
         if self.opener:
             response = self.opener.open(request, timeout=60)
@@ -91,6 +130,7 @@ class OpenProjectClient:
         with response:
             charset = response.headers.get_content_charset() or "utf-8"
             return json.loads(response.read().decode(charset))
+
 
 
 def load_hotel_map(path=HOTEL_MAP_FILE):
