@@ -20,12 +20,21 @@ from urllib.request import HTTPSHandler, ProxyHandler, Request, build_opener, ur
 import pandas as pd
 import requests
 
-# 尝试导入 pycurl（用于解决 OpenSSL 与服务器 TLS 不兼容的问题）
+# 尝试导入 curl_cffi（用于解决 OpenSSL 与服务器 TLS 不兼容的问题）
+# curl_cffi 使用预编译的 wheel 包，不需要编译，可以在 Streamlit Cloud 上安装
+try:
+    from curl_cffi import requests as curl_requests
+    HAS_CURL_CFFI = True
+except ImportError:
+    HAS_CURL_CFFI = False
+
+# 尝试导入 pycurl（备选方案）
 try:
     import pycurl
     HAS_PYCURL = True
 except ImportError:
     HAS_PYCURL = False
+
 
 
 
@@ -70,8 +79,21 @@ class OpenProjectClient:
             handlers.append(HTTPSHandler(context=self.ssl_context))
         self.opener = build_opener(*handlers) if handlers else None
 
+    def _get_json_with_curl_cffi(self, url):
+        """使用 curl_cffi 发起请求（解决 OpenSSL 与服务器 TLS 不兼容的问题）"""
+        resp = curl_requests.get(
+            url,
+            headers=self.headers,
+            timeout=60,
+            verify=False,
+            impersonate="chrome",
+        )
+        if resp.status_code >= 400:
+            raise Exception(f"HTTP {resp.status_code}: {resp.text[:500]}")
+        return resp.json()
+
     def _get_json_with_pycurl(self, url):
-        """使用 pycurl 发起请求（解决 OpenSSL 与服务器 TLS 不兼容的问题）"""
+        """使用 pycurl 发起请求（备选方案）"""
         buf = BytesIO()
         c = pycurl.Curl()
         try:
@@ -99,7 +121,15 @@ class OpenProjectClient:
             )
         url = f"{BASE_URL}{path}{query}"
 
-        # 优先使用 pycurl（解决 OpenSSL 与服务器 TLS 不兼容的问题）
+        # 1. 优先使用 curl_cffi（使用预编译 wheel，无需编译，可在 Streamlit Cloud 上安装）
+        if HAS_CURL_CFFI:
+            try:
+                return self._get_json_with_curl_cffi(url)
+            except Exception as e:
+                # curl_cffi 失败时继续尝试其他方案
+                pass
+
+        # 2. 其次使用 pycurl
         if HAS_PYCURL:
             try:
                 return self._get_json_with_pycurl(url)
@@ -107,6 +137,7 @@ class OpenProjectClient:
                 # pycurl 失败时回退到 urllib
                 pass
 
+        # 3. 最后回退到 urllib
         request = Request(url, headers=self.headers)
         if self.opener:
             response = self.opener.open(request, timeout=60)
@@ -115,6 +146,7 @@ class OpenProjectClient:
         with response:
             charset = response.headers.get_content_charset() or "utf-8"
             return json.loads(response.read().decode(charset))
+
 
 
 
