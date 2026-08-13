@@ -138,18 +138,16 @@ if submitted:
                 },
             )
 
-            # 下载按钮
+            # 下载按钮（直接使用已抓取的数据，避免重复抓取）
             st.divider()
             col_dl1, col_dl2 = st.columns([1, 3])
             with col_dl1:
-                # 生成过滤后的 Excel
-                excel_bytes, row_count = build_excel_bytes(
-                    start_date,
-                    end_date,
-                    api_key=api_key,
-                    auth_header=auth_header,
-                    exclude_keywords=exclude_keywords if exclude_keywords else None,
-                )
+                # 使用已抓取到的 df_filtered 直接生成 Excel，避免再次调用 API
+                from io import BytesIO
+                excel_buffer = BytesIO()
+                with pd.ExcelWriter(excel_buffer, engine="openpyxl") as writer:
+                    df_filtered.to_excel(writer, index=False, sheet_name="工单数据")
+                excel_bytes = excel_buffer.getvalue()
                 filename = make_output_filename(start_date, end_date)
                 st.download_button(
                     "📥 下载过滤后的 Excel",
@@ -159,7 +157,8 @@ if submitted:
                     use_container_width=True,
                 )
             with col_dl2:
-                st.caption(f"下载的 Excel 包含 {row_count} 条数据（已排除主题含有关键词的工单）")
+                st.caption(f"下载的 Excel 包含 {filtered_count} 条数据（已排除主题含有关键词的工单）")
+
 
         except Exception as exc:
             st.error(f"生成失败：{exc}")

@@ -37,7 +37,8 @@ TS_TYPE_ID = "1"
 TS_TYPE_NAME = "TS任务"
 WU_PENG_HUI_USER_ID = "141"  # 吴鹏辉的用户ID
 DEFAULT_START_DATE = "2026-07-08"
-PAGE_SIZE = 100
+PAGE_SIZE = 1000
+
 VERIFY_SSL = False
 DISABLE_SYSTEM_PROXY = True
 HOTEL_MAP_FILE = "AI项目管理.xlsx"
@@ -379,9 +380,12 @@ def fetch_work_packages_by_type(client, type_id):
         total = payload.get("total")
         if not elements or count <= 0:
             break
-        offset += count
-        if total is not None and offset > total:
+        # 注意：此 OpenProject 实例的 offset 参数是"页码"语义（第1页、第2页），
+        # 而不是"偏移量"（从第101个开始）。所以每次翻页 offset 加 1。
+        offset += 1
+        if total is not None and offset > (total + PAGE_SIZE - 1) // PAGE_SIZE:
             break
+
 
 
 def build_ai_row(client, wp):
